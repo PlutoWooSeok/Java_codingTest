@@ -46,12 +46,27 @@ public class java_TIL01 {
 
         //상수와 리터럴
         //EX)
-        final int Max_speed = 10;
-
-        final int MAX_VALUE;
-        MAX_VALUE =100;
+//        final int Max_speed = 10;
+//
+//        final int MAX_VALUE;
+//        MAX_VALUE =100;
         //MAX_VALUE =200;   //error,final(상수)에 저장된 값은 한번 저장이 되면 바꿀 수 없다.
         //리터럴(literal)은 원래 수학적으로 알고있는 상수, 즉 값을 말한다.
+
+        //문자열 결합
+        String name = "Ja"+"va";
+        String str = name+8.0;
+
+        System.out.println(name);
+        System.out.println(str);
+        System.out.println(7+" ");
+        System.out.println(" "+7);
+        System.out.println(7+"");
+        System.out.println(""+7);
+        System.out.println(" "+" ");
+        System.out.println(7+7+" ");
+        System.out.println(" "+7);
+
 
 
 
