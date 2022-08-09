@@ -54,18 +54,32 @@ public class java_TIL01 {
         //리터럴(literal)은 원래 수학적으로 알고있는 상수, 즉 값을 말한다.
 
         //문자열 결합
-        String name = "Ja"+"va";
-        String str = name+8.0;
+        //예제 2-7
+//        String name = "Ja"+"va";
+//        String str = name+8.0;
+//
+//        System.out.println(name);
+//        System.out.println(str);
+//        System.out.println(7+" ");
+//        System.out.println(" "+7);
+//        System.out.println(7+"");
+//        System.out.println(""+7);
+//        System.out.println(" "+" ");
+//        System.out.println(7+7+" ");
+//        System.out.println(" "+7);
 
-        System.out.println(name);
-        System.out.println(str);
-        System.out.println(7+" ");
-        System.out.println(" "+7);
-        System.out.println(7+"");
-        System.out.println(""+7);
-        System.out.println(" "+" ");
-        System.out.println(7+7+" ");
-        System.out.println(" "+7);
+        //두 변수읙밧 바꾸기
+        //예제 2-8
+
+        int x=1, y=5;
+        System.out.println("x="+x);
+        System.out.println("y="+y);
+
+        int temp =x;
+        x=y;
+        y=temp;
+        System.out.println("x="+x);
+        System.out.println("y="+y);
 
 
 
