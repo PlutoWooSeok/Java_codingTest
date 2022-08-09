@@ -117,20 +117,47 @@ public class java_TIL01 {
         //정수형(부호 존재)의 오버플로우
         //overflow 란 연산과정에서 해당 타입이 표현할 수 있는 값의 범위를 넘어서는 것을 말한다.
         //예제2-11
-        short sMin = -32768, sMax=32767;
-        char cMin = 0;
-        char cMax = 65535;
+//        short sMin = -32768, sMax=32767;
+//        char cMin = 0;
+//        char cMax = 65535;
+//
+//        System.out.println("sMin = "+sMin);
+//        System.out.println("sMin-1="+(short)(sMin));
+//        System.out.println("sMax = "+sMax);
+//        System.out.println("sMax+1="+(short)(sMax));
+//        System.out.println("CMin "+cMin);
+//        System.out.println("cMin-1="+(int)(cMin));
+//        System.out.println("CMax "+cMax);
+//        System.out.println("cMax+1="+(int)(cMax));
 
-        System.out.println("sMin = "+sMin);
-        System.out.println("sMin-1="+(short)(sMin));
-        System.out.println("sMax = "+sMax);
-        System.out.println("sMax+1="+(short)(sMax));
-        System.out.println("CMin "+cMin);
-        System.out.println("cMin-1="+(int)(cMin));
-        System.out.println("CMax "+cMax);
-        System.out.println("cMax+1="+(int)(cMax));
+        //타입 간의 변환(형 변환)
+        //1. 숫자를 문자로 변환 - 숫자에 '0'을 더한다.
+        //(char)(3 + '0')  //추가적으로 (char)를 붙여애 형변환이 된다.
 
+        //2. 문자를 숫자로 변환 - 문자에서 '0'을 뺀다.
+        //'3'-'0'
 
+        //3. 숫자를 문자열로 변환- 숫자에 빈 문자열("")을 더한다.
+        //3+""
+
+        //4. 문자열을 숫자로 변환 - Integer.parseInt() 또는 Double.parseDouble()을 사용한다,
+        //Integer.parseInt("3")
+        //Double.parseDouble("3.14")
+
+        //5. 문자열을 문자로 변환 - charAt(0)
+        //"3".charAt(0)
+
+        //6. 문자를 문자열로 변환 - 빈 문자열("")을 더한다.
+        //'3' + ""
+
+        //예제2-12
+        String str = "3";
+
+        System.out.println(str.charAt(0) - '0');
+        System.out.println('3' - '0' +1);
+        System.out.println(Integer.parseInt("3")+1);
+        System.out.println("3"+1);
+        System.out.println((char) (3+ '0'));
     }
 
 }
