@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class java_TIL01 {
     public static void main(String[] args){
         //화면에 글자 출력하기
@@ -82,25 +84,35 @@ public class java_TIL01 {
 
         //printf를 이영한 출력
         //에제 2-9
-        String  url = "www.codechobo.com";
-        float f1 =.10f;
-        float f2 =1e1f;
-        float f3 =3.14e3f;
-        double d =1.23456789;
-        System.out.printf("f1=%f, %e, %g%n", f1,f1,f1);
-        System.out.printf("f1=%f, %e, %g%n", f2,f2,f2);
-        System.out.printf("f1=%f, %e, %g%n", f3,f3,f3);
-        System.out.printf("d=%f%n",d);
-        System.out.printf("d=14.10%f%n",d);
-        System.out.printf("[12345678901234567890]%n");
-        System.out.printf("[%s]%n",url);    //문자열의 길이만큼 출력공간 확보
-        System.out.printf("[%20s]%n",url);  //최소20글자출력공간 확보(우측정렬)
-        System.out.printf("[%-20s]%n",url); //최소20글자출력공간 확보(좌측정렬)
-        System.out.printf("[%.8s]%n",url);  //왼쪽에서 8글자만 출력
+//        String  url = "www.codechobo.com";
+//        float f1 =.10f;
+//        float f2 =1e1f;
+//        float f3 =3.14e3f;
+//        double d =1.23456789;
+//        System.out.printf("f1=%f, %e, %g%n", f1,f1,f1);
+//        System.out.printf("f1=%f, %e, %g%n", f2,f2,f2);
+//        System.out.printf("f1=%f, %e, %g%n", f3,f3,f3);
+//        System.out.printf("d=%f%n",d);
+//        System.out.printf("d=14.10%f%n",d);
+//        System.out.printf("[12345678901234567890]%n");
+//        System.out.printf("[%s]%n",url);    //문자열의 길이만큼 출력공간 확보
+//        System.out.printf("[%20s]%n",url);  //최소20글자출력공간 확보(우측정렬)
+//        System.out.printf("[%-20s]%n",url); //최소20글자출력공간 확보(좌측정렬)
+//        System.out.printf("[%.8s]%n",url);  //왼쪽에서 8글자만 출력
         //실수형 값의 출력에 사용되는 지시자
         //%f, %e, %g
         //보통 %f를 사용 지수표현은 e, g는 간략히 표현시 사용
         //%s에 숫자를 추가하면 원하는 만큼의 출력 공간을 확보하거나이부만 출력가능
+
+        //화면으로부터 입력받기
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("두자리의 정수를 하나 입력하시오. >>>");
+        String input = scanner.nextLine();
+        int num = Integer.parseInt(input);
+
+        System.out.println("입력 내용 :"+input);
+        System.out.printf("num=%d%n",num);
 
 
 
