@@ -105,15 +105,30 @@ public class java_TIL01 {
         //%s에 숫자를 추가하면 원하는 만큼의 출력 공간을 확보하거나이부만 출력가능
 
         //화면으로부터 입력받기
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("두자리의 정수를 하나 입력하시오. >>>");
+//        String input = scanner.nextLine();
+//        int num = Integer.parseInt(input);
+//
+//        System.out.println("입력 내용 :"+input);
+//        System.out.printf("num=%d%n",num);
+//
+        //정수형(부호 존재)의 오버플로우
+        //overflow 란 연산과정에서 해당 타입이 표현할 수 있는 값의 범위를 넘어서는 것을 말한다.
+        //예제2-11
+        short sMin = -32768, sMax=32767;
+        char cMin = 0;
+        char cMax = 65535;
 
-        System.out.print("두자리의 정수를 하나 입력하시오. >>>");
-        String input = scanner.nextLine();
-        int num = Integer.parseInt(input);
-
-        System.out.println("입력 내용 :"+input);
-        System.out.printf("num=%d%n",num);
-
+        System.out.println("sMin = "+sMin);
+        System.out.println("sMin-1="+(short)(sMin));
+        System.out.println("sMax = "+sMax);
+        System.out.println("sMax+1="+(short)(sMax));
+        System.out.println("CMin "+cMin);
+        System.out.println("cMin-1="+(int)(cMin));
+        System.out.println("CMax "+cMax);
+        System.out.println("cMax+1="+(int)(cMax));
 
 
     }
