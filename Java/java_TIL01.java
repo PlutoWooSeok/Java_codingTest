@@ -59,7 +59,7 @@ public class java_TIL01 {
         //예제 2-7
 //        String name = "Ja"+"va";
 //        String str = name+8.0;
-//
+
 //        System.out.println(name);
 //        System.out.println(str);
 //        System.out.println(7+" ");
