@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class java_TIL02 {
     public static void main(String[] args){
         //연산자
@@ -71,16 +73,16 @@ public class java_TIL02 {
 
         //문자열의 비교
         //예제3-14
-        String str1 = "abc";
-        String str2 = new String("abc"); //String 클래스의 객체를 생성
-
-        System.out.printf("\"abc\"==\"abc\" ? %b%n", "abc" =="abc");
-        System.out.printf(" str1==\"abc\" ? %b%n", str1 =="abc");
-        System.out.printf(" str2==\"abc\" ? %b%n", str2 =="abc");
-        System.out.printf("str1.equals(\"abc\") ? %b%n", str1.equals("abc"));
-        System.out.printf("str2.equals(\"abc\") ? %b%n", str2.equals("abc"));
-        System.out.printf("str2.equals(\"ABC\") ? %b%n", str2.equals("ABC"));
-        System.out.printf("str2.equalsIgnoreCase(\"ABC\") ? %b%n", str2.equalsIgnoreCase("ABC"));
+//        String str1 = "abc";
+//        String str2 = new String("abc"); //String 클래스의 객체를 생성
+//
+//        System.out.printf("\"abc\"==\"abc\" ? %b%n", "abc" =="abc");
+//        System.out.printf(" str1==\"abc\" ? %b%n", str1 =="abc");
+//        System.out.printf(" str2==\"abc\" ? %b%n", str2 =="abc");
+//        System.out.printf("str1.equals(\"abc\") ? %b%n", str1.equals("abc"));
+//        System.out.printf("str2.equals(\"abc\") ? %b%n", str2.equals("abc"));
+//        System.out.printf("str2.equals(\"ABC\") ? %b%n", str2.equals("ABC"));
+//        System.out.printf("str2.equalsIgnoreCase(\"ABC\") ? %b%n", str2.equalsIgnoreCase("ABC"));
 
         /*
         str2와 abc"의 내용이 같아도 '=='로 비교하면 false를 결과로 얻는다. 내용은 같지만서로 다른 객체이기 때문이다
@@ -88,7 +90,23 @@ public class java_TIL02 {
         만일 대소문자 구분 없이 비교를 원할 경우 equals()가 아닌 equalsIgnoreCase(0를 사용하면 된다
          */
 
+        //논리 연산자 &&, ||
+        //예제3-15
+        Scanner scan = new Scanner(System.in);
+        char ch = ' ';
 
+        System.out.printf("문자를 하나 입력하시오>");
+
+        String input = scan.nextLine();
+        ch = input.charAt(0);
+
+        if('0' <= ch && ch <= '9'){
+            System.out.printf("입력하신 문자는 숫자입니다.%n");
+        }
+
+        if (('a' <= ch && ch <= 'z') || ('A' <= ch&& ch <='Z')){
+            System.out.printf("입력하신 문자는 영문자입니다.%n");
+        }
 
     }
 }
