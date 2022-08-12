@@ -111,18 +111,42 @@ public class java_TIL02 {
 
         //논리 부정 연산자
         //예제 3-16
-        boolean b = true;
-        char ch = 'C';
+//        boolean b = true;
+//        char ch = 'C';
+//
+//        System.out.printf("b=%b%n", b);
+//        System.out.printf("!b=%b%n", !b);
+//        System.out.printf("!!b=%b%n", !!b);
+//        System.out.printf("!!!b=%b%n", !!!b);
+//        System.out.println();
+//
+//        System.out.printf("ch = %c%n", ch);
+//        System.out.printf("ch < 'a' || ch < 'z'=%b%n", ch < 'a' || ch >'z');
+//        System.out.printf("!('a' <= ch && ch <= 'z')=%b%n", !('a' <= ch && ch <= 'z'));
+//        System.out.printf("'a' <= ch && ch <= 'z'=%b%n", 'a' <= ch && ch <= 'z');
 
-        System.out.printf("b=%b%n", b);
-        System.out.printf("!b=%b%n", !b);
-        System.out.printf("!!b=%b%n", !!b);
-        System.out.printf("!!!b=%b%n", !!!b);
-        System.out.println();
+        //조건 연산자 == 삼항 연산자
+        //조건식 ? 식1 : 식2
+        //ex) result = (x>y) ? x:y; //괄호 생략 가능
 
-        System.out.printf("ch = %c%n", ch);
-        System.out.printf("ch < 'a' || ch < 'z'=%b%n", ch < 'a' || ch >'z');
-        System.out.printf("!('a' <= ch && ch <= 'z')=%b%n", !('a' <= ch && ch <= 'z'));
-        System.out.printf("'a' <= ch && ch <= 'z'=%b%n", 'a' <= ch && ch <= 'z');
+        //예제3-17
+        int x,y,z;
+        int absX, absY, absZ;
+        char signX,signY, signZ;
+
+        x = 10;
+        y = -5;
+        z = 0;
+
+        absX = x >= 0? x : -x;  // x의 값이 음수이면, 양수로 바꾼다.
+        absY = x >= 0? y : -y;
+        absZ = x >= 0? z : -z;
+        signX = x >0 ? '+' : ( x==0? ' ': '-'); //조건 연산자를 중첩 사용
+        signY = y >0 ? '+' : ( y==0? ' ': '-');
+        signZ = z >0 ? '+' : ( z==0? ' ': '-');
+
+        System.out.printf("x=%c%d%n", signX, absX);
+        System.out.printf("y=%c%d%n", signY, absY);
+        System.out.printf("z=%c%d%n", signZ, absZ);
     }
 }
