@@ -61,8 +61,34 @@ public class java_TIL02 {
 
         //Math.round()로 반올림하기
         //예제 3-11
-        double pi = 3.141592;
-        double shortPi = Math.round(pi * 1000) / 1000.0;
-        System.out.println( shortPi);
+//        double pi = 3.141592;
+//        double shortPi = Math.round(pi * 1000) / 1000.0;
+//        System.out.println( shortPi);
+
+        //비교 연산자
+        //대소비교 연산자 <, >, <=, >=
+        //등가비교 연산 == : 두 값이 같으면 True 다르면 False / != : 두 값이 다르면 True 같으면 False
+
+        //문자열의 비교
+        //예제3-14
+        String str1 = "abc";
+        String str2 = new String("abc"); //String 클래스의 객체를 생성
+
+        System.out.printf("\"abc\"==\"abc\" ? %b%n", "abc" =="abc");
+        System.out.printf(" str1==\"abc\" ? %b%n", str1 =="abc");
+        System.out.printf(" str2==\"abc\" ? %b%n", str2 =="abc");
+        System.out.printf("str1.equals(\"abc\") ? %b%n", str1.equals("abc"));
+        System.out.printf("str2.equals(\"abc\") ? %b%n", str2.equals("abc"));
+        System.out.printf("str2.equals(\"ABC\") ? %b%n", str2.equals("ABC"));
+        System.out.printf("str2.equalsIgnoreCase(\"ABC\") ? %b%n", str2.equalsIgnoreCase("ABC"));
+
+        /*
+        str2와 abc"의 내용이 같아도 '=='로 비교하면 false를 결과로 얻는다. 내용은 같지만서로 다른 객체이기 때문이다
+        그러나 equals()는 객체가 달라도 내용이 같으면 True를 반환한다. 따라서 문자열을 비교할 경우 항상 equals()를 사용해야한다.
+        만일 대소문자 구분 없이 비교를 원할 경우 equals()가 아닌 equalsIgnoreCase(0를 사용하면 된다
+         */
+
+
+
     }
 }
