@@ -51,13 +51,18 @@ public class java_TIL02 {
 
         //사칙연산자
         //예제3-6
-        int a = 10;
-        int b = 4;
-        System.out.printf("%d + %d = %d%n", a, b, a+b);
-        System.out.printf("%d - %d = %d%n", a, b, a-b);
-        System.out.printf("%d * %d = %d%n", a, b, a*b);
-        System.out.printf("%d / %d = %d%n", a, b, a/b);
-        System.out.printf("%d / %f = %f%n", a, (float)b, a/(float)b);
+//        int a = 10;
+//        int b = 4;
+//        System.out.printf("%d + %d = %d%n", a, b, a+b);
+//        System.out.printf("%d - %d = %d%n", a, b, a-b);
+//        System.out.printf("%d * %d = %d%n", a, b, a*b);
+//        System.out.printf("%d / %d = %d%n", a, b, a/b);
+//        System.out.printf("%d / %f = %f%n", a, (float)b, a/(float)b);
 
+        //Math.round()로 반올림하기
+        //예제 3-11
+        double pi = 3.141592;
+        double shortPi = Math.round(pi * 1000) / 1000.0;
+        System.out.println( shortPi);
     }
 }
