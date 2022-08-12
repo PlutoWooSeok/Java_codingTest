@@ -15,15 +15,26 @@ public class java_TIL02 {
 
         //증감 연산자 ++, --
         //예제3-2
-        int i=5, j=0;
+//        int i=5, j=0;
+//
+//        j = i++;
+//        System.out.println("j=i++; 실행 후 , i="+ i +", j="+j);
+//
+//        i=5;
+//        j=0;
+//
+//        j = ++i;
+//        System.out.println("j=++i; 실행 후 , i="+ i +", j="+j);
 
-        j = i++;
-        System.out.println("j=i++; 실행 후 , i="+ i +", j="+j);
+        //부호 연산자
+        //3-4
 
-        i=5;
-        j=0;
+        int i = -10;
+        i = +i;
+        System.out.println(i);
 
-        j = ++i;
-        System.out.println("j=++i; 실행 후 , i="+ i +", j="+j);
+        i =-10;
+        i = -i;
+        System.out.println(i);
     }
 }
