@@ -92,21 +92,37 @@ public class java_TIL02 {
 
         //논리 연산자 &&, ||
         //예제3-15
-        Scanner scan = new Scanner(System.in);
-        char ch = ' ';
+//        Scanner scan = new Scanner(System.in);
+//        char ch = ' ';
+//
+//        System.out.printf("문자를 하나 입력하시오>");
+//
+//        String input = scan.nextLine();
+//        ch = input.charAt(0);
+//
+//        if('0' <= ch && ch <= '9'){
+//            System.out.printf("입력하신 문자는 숫자입니다.%n");
+//        }
+//
+//        if (('a' <= ch && ch <= 'z') || ('A' <= ch&& ch <='Z')){
+//            System.out.printf("입력하신 문자는 영문자입니다.%n");
+//        }
 
-        System.out.printf("문자를 하나 입력하시오>");
 
-        String input = scan.nextLine();
-        ch = input.charAt(0);
+        //논리 부정 연산자
+        //예제 3-16
+        boolean b = true;
+        char ch = 'C';
 
-        if('0' <= ch && ch <= '9'){
-            System.out.printf("입력하신 문자는 숫자입니다.%n");
-        }
+        System.out.printf("b=%b%n", b);
+        System.out.printf("!b=%b%n", !b);
+        System.out.printf("!!b=%b%n", !!b);
+        System.out.printf("!!!b=%b%n", !!!b);
+        System.out.println();
 
-        if (('a' <= ch && ch <= 'z') || ('A' <= ch&& ch <='Z')){
-            System.out.printf("입력하신 문자는 영문자입니다.%n");
-        }
-
+        System.out.printf("ch = %c%n", ch);
+        System.out.printf("ch < 'a' || ch < 'z'=%b%n", ch < 'a' || ch >'z');
+        System.out.printf("!('a' <= ch && ch <= 'z')=%b%n", !('a' <= ch && ch <= 'z'));
+        System.out.printf("'a' <= ch && ch <= 'z'=%b%n", 'a' <= ch && ch <= 'z');
     }
 }
