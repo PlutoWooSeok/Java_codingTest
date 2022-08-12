@@ -41,9 +41,23 @@ public class java_TIL02 {
         //(타입)피연산자
         //3-5
 
-        double d = 85.4;
-        int score = (int) d;
-        System.out.println("score = "+score);
-        System.out.println("d = "+d);
+//        double d = 85.4;
+//        int score = (int) d;
+//        System.out.println("score = "+score);
+//        System.out.println("d = "+d);
+        //incompatible type:possible lossy conversion from type to type
+        //이는 큰타입에서 작은 타입으로의 형변환시 값 손실이 발생할 수 있어 발생하는 오류이다.
+        //만약  자동 형변환을 사용할 경우 형변환이 프로그래머의 실수가 아닌 의도적인 것으로 간주하여  컴파일러는 에러를 발생시키지 않는다.
+
+        //사칙연산자
+        //예제3-6
+        int a = 10;
+        int b = 4;
+        System.out.printf("%d + %d = %d%n", a, b, a+b);
+        System.out.printf("%d - %d = %d%n", a, b, a-b);
+        System.out.printf("%d * %d = %d%n", a, b, a*b);
+        System.out.printf("%d / %d = %d%n", a, b, a/b);
+        System.out.printf("%d / %f = %f%n", a, (float)b, a/(float)b);
+
     }
 }
