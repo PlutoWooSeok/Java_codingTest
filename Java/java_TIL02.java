@@ -29,12 +29,21 @@ public class java_TIL02 {
         //부호 연산자
         //3-4
 
-        int i = -10;
-        i = +i;
-        System.out.println(i);
+//        int i = -10;
+//        i = +i;
+//        System.out.println(i);
+//
+//        i =-10;
+//        i = -i;
+//        System.out.println(i);
 
-        i =-10;
-        i = -i;
-        System.out.println(i);
+        //형변환(casting) 연산자
+        //(타입)피연산자
+        //3-5
+
+        double d = 85.4;
+        int score = (int) d;
+        System.out.println("score = "+score);
+        System.out.println("d = "+d);
     }
 }
