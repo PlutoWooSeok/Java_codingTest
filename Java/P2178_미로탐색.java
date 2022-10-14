@@ -86,6 +86,7 @@ public class P2178_미로탐색 {
                         A[x][y] = A[now[0]][now[1]]+1 ;         //깊이 업데이트 하기
                         queue.add(new int[] {x,y});
                     }
+
                 }
             }
         }
