@@ -20,5 +20,6 @@ public class P1715_카드정렬 {
             priorityQueue.add(card1 + card2);
         }
         System.out.println(sum);
+
     }
 }
