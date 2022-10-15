@@ -43,7 +43,7 @@ public class P1167_트리지름 {
         N = sc.nextInt();
         A = new ArrayList[N+1];             //인데스의 처음을 1번으로 하기 위해 N+1로 크기를 잡음
         for ( int i = 1 ; i < N+1 ; i++){
-            A= new ArrayList<Edge>();
+            A[i]= new ArrayList< Edge>();
         }
         for( int i = 0; i < N; i++){       //A 인접 리스트에 그래프 데이터 저장하기
             int S = sc.nextInt();           //노드 번호 입력
