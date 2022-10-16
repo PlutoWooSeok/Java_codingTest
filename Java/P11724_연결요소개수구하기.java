@@ -65,8 +65,8 @@ public class P11724_연결요소개수구하기 {
         }
         int count = 0;                                            //DFS 총 횟수
         for(int i = 1 ; i < N+1 ; i++ ){
-            if( !A[i]){                                             //방문하지 않은 노드가 없을 때까지 반복하기 //디폴트 값 true
-                count++;
+            if( !A[i]){                                             //방문하지 않은 노드가 있다면
+                count++;                                                //카운트 ++-ㅔ레ㅔㅔㅔㅔㅔㅔㅔㅔ
                 DFS(i);
             }
         }

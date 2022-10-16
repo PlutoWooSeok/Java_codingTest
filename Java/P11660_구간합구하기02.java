@@ -35,6 +35,8 @@ public class P11660_구간합구하기02 {
 
             //구간 합 배열로 질릐에 답변하기
             int result = D[x2][y2] - D[x1-1][y2] - D[x2][y1-1] + D[x1-1][y1-1];
+
+            //결과 출력
             System.out.println(result);
 
 

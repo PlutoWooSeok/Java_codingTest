@@ -64,7 +64,7 @@ public class P13023_친구관계파악 {
             System.out.println("0");    //깊이가 5가 되지 못한다면, 0 출력
         }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-        public static void DFS(int now, int depth){
+        static void DFS(int now, int depth){
         if(depth == 5 || arrive){
             arrive = true;
             return;

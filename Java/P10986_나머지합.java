@@ -50,6 +50,5 @@ public class P10986_나머지합 {
         }
         System.out.println(result);
 
-
     }
 }

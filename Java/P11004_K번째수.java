@@ -95,5 +95,4 @@ public class P11004_K번째수 {
         A[i] = A[j];
         A[j] = temp;
     }
-
 }
