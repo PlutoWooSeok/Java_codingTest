@@ -39,6 +39,4 @@ public class P1850_최대공약수 {
         else
             return gcd(b,a%b);
     }
-
-
 }
