@@ -36,6 +36,7 @@ public class P1541_잃어버린괄호 {
         System.out.println(answer);
     }
 
+    ////////////mySum()함수 구현부/////////////////
     static int mySum(String s) {                //나뉜 그룹의 더하기 연산 수행 함수
         int sum =0;
         String temp[] = s.split("[+]");     //"+" 기호를 기준으로 나눠 배열에 저장
