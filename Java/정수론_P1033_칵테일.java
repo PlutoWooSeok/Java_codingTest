@@ -44,7 +44,7 @@ c노드{
 
 import java.util.*;
 import java.io.*;
-public class 정수론_P1033_1033 {
+public class 정수론_P1033_칵테일 {
     static ArrayList<cNode> A[] ;
     static long lcm;
     static boolean visited[];
@@ -97,7 +97,7 @@ public class 정수론_P1033_1033 {
         for( cNode i : A[Node]){
             int next = i.getB();
             if(!visited[next]){
-                D[next] = D[Node] * i.getQ()/i.getP();          //  주어진 비율로 다음 노드 값 갱신하기
+                D[next] = D[Node] * i.getQ()/i.getP();          //  주어진 비율로 다음 노드 값 갱신하칵테
                 DFS(next);
             }
         }
