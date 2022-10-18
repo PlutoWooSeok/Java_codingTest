@@ -48,6 +48,5 @@ public class 그래프_P1516_게임개발 {
                 System.out.println(result[i]+ selfBuild[i]);
             }
         }
-
     }
 
