@@ -123,8 +123,7 @@ public class 그래프_P1948_임계경로구하기 {
 }
 
 
-
-class node{
+class node{                 //가중치가 있는 그래프이므로 클래스 생성
     int targetNode;
     int value;
     node(int targetNode, int value){
