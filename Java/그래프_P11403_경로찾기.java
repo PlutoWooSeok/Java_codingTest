@@ -13,7 +13,10 @@ public class 그래프_P11403_경로찾기 {
             StringTokenizer st = new StringTokenizer(br.readLine());
             for( int j =1; j<=N; j++){
                 int v = Integer.parseInt(st.nextToken());
-                A[i][j] = v;
+                if( i == j)
+                    A[i][j] = 0;
+                else
+                    A[i][j] = v;
             }
         }
         for( int k=0; k <N; k++){
