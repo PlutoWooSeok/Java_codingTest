@@ -40,7 +40,7 @@ find( int a){
 import java.io.*;
 import java.util.*;
 
-public class 그래프_P17472_다리만들기 {
+public class 그래프_P1414_불우이웃돕기 {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static StringTokenizer st;
